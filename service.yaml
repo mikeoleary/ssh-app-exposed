@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ubuntu
+  namespace: ubuntu
+  labels:
+    cis.f5.com/as3-app: fileserver_app
+    cis.f5.com/as3-pool: fileserver_ssh_pool
+    cis.f5.com/as3-tenant: fileserver_partition
+spec:
+  type: ClusterIP
+  ports:
+    - name: ssh
+      port: 22
+      targetPort: 22
+      protocol: TCP
+  selector:
+    app: ubuntu
