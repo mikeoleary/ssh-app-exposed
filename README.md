@@ -18,6 +18,10 @@ kubectl apply -f config-map.yaml
 
 Now you should see an application exposed on your BIG-IP:
 
-![Image](images/image.PNG)
+![Image](images/virtual-servers.PNG)
+
+With a pool member:
+
+![Image2](images/pool-members.PNG)
 
 Thanks!
