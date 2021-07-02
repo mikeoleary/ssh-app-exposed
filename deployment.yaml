@@ -17,7 +17,7 @@ spec:
        #prometheus.io/port: "9113"
     spec:
       containers:
-      - image: ubuntu
+      - image: ubuntu #or your image here
         imagePullPolicy: Always
         name: ubuntu
         command: ["/bin/sleep", "3650d"]
