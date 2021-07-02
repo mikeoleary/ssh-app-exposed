@@ -8,6 +8,7 @@ You will want to edit the file called ```config-map.yaml``` so that the IP addre
 After that, run
 ````
 git clone https://github.com/mikeoleary/ssh-app-exposed.git
+cd ssh-app-exposed
 kubectl apply -f ns.yaml
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
