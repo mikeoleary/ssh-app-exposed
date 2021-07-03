@@ -17,10 +17,10 @@ spec:
        #prometheus.io/port: "9113"
     spec:
       containers:
-      - image: michaelwoleary/ubuntu:1.3
+      - image: michaelwoleary/ubuntu:1.4
         imagePullPolicy: Always
         name: ubuntu
         command: ["/usr/sbin/sshd","-D"]
         ports:
-        - name: ssh
-          containerPort: 22
+        - name: customhighport
+          containerPort: 2222

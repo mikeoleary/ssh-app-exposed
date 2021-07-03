@@ -35,7 +35,7 @@ data:
                         ],
                         "members": [
                             {
-                                "servicePort": 22,
+                                "servicePort": 2222,
                                 "serverAddresses": []
                             }
                         ]
